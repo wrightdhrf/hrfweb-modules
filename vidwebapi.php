@@ -14,6 +14,6 @@ ini_set('display_errors', True);
 		return ($return);
 	}
 
-	$hrfvideo = unserialize(getvideo($vurl));
+	$hrfvideo = unserialize(get_video($vurl));
 	echo $hrfvideo->title;
 ?>
