@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Tab Test</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="pte_tabs_css.css" />
+	<link rel="stylesheet" href="http://www.humanrightsfirst.org/wp-content/themes/HRF-Single/style.css" type="text/css" media="screen" />
+	<script src="/includes/jquery-1.8.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#tcontent').ajaxStart(function() {
+				$(this).show();
+				$('#tcontent').html('<img src="/images/325.gif" />');
+			});
+			
+			$('.tab_item').click(function() {
+				var contentlnk = $(this).attr('title');
+				$('#tcontent').fadeOut('slow', function() {
+					$('#tcontent').load(contentlnk);
+					$('#tcontent').fadeIn('slow');
+				});
+			});
+			$('.tab_item').hover(
+				function() {
+					$(this).css({'color' : '#333333'});
+				},
+				function(){
+					$(this).css({'color' : '#FFFFFF'});
+				}
+			);
+		});
+	</script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="container">
+	<div id="header">
+	<!-- Maps for all categories-->
+		<map name="header3" id="header3">
+			<area shape="rect" coords="0,0,960,90" href="http://www.humanrightsfirst.org/" alt="Human Rights First" />
+		</map>
+        <img src="/wp-content/uploads/images/hdr-960-hrf-tagline.png" usemap="#header3" alt="Human Rights First" />
+		
+	</div><!--end header div-->
+	<div id="nav">
+		<ul class="sf-menu">
+		<!--First Button-->
+			<li class="current">
+				<a href="/">OUR WORK</a>
+				<ul>
+			<li><a href="/our-work/law-and-security/afghanistan/">Afghanistan</a></li>	
+			<li><a href="/our-work/business-and-human-rights/">Business and Human Rights</a></li>
+                    <li><a href="/our-work/crimes-against-humanity/">Crimes Against Humanity</a></li>
+					<li><a href="/our-work/human-rights-defenders/defenders-in-egypt/">Egypt</a></li>
+                    <li><a href="/our-work/fighting-discrimination/">Fighting Discrimination</a></li>
+                    <li><a href="/our-work/law-and-security/closegitmo/about/">Guantanamo</a></li>
+                    <li><a href="/our-work/human-rights-defenders/">Human Rights Defenders</a></li>
+                    <li><a href="/our-work/business-and-human-rights/internet-freedom-and-privacy/">Internet Freedom and Privacy</a></li>
+                    <li><a href="/our-work/law-and-security/">Law and Security</a></li>
+		      <li><a href="/our-work/law-and-security/prosecuting-terrorism/">Prosecuting Terrorism</a></li>
+                    <li><a href="/our-work/refugee-protection/probono-program/">Pro Bono Opportunities</a></li>
+                    <li><a href="/our-work/refugee-protection/">Refugee Protection</a></li>
+                    <li><a href="/our-work/law-and-security/military-leaders/">Retired Military Leaders</a></li>
+                    <li><a href="/our-work/crimes-against-humanity/syria/">Syria</a></li>
+                    <li><a href="/our-work/law-and-security/torture-and-accountability/">Torture and Accountability</a></li>
+				</ul>
+			</li><!--End First Button-->
+            		<!-- Second Button -->
+            <li class="current">
+				<a href="/about-us/">ABOUT US</a>
+				<ul>
+					<li><a href="/about-us/human-rights-first-charter/">Charter</a></li>
+					<li><a href="/about-us/">Mission</a></li>
+            			       <li><a href="/about-us/staff/">Staff</a></li>
+                    			<li><a href="/about-us/board-of-directors/">Board of Directors</a></li>
+					<li><a href="/about-us/annual-reports/">Annual Report</a></li>
+              	  	<li><a href="/about-us/nonprofit-status/">Nonprofit Status and Ratings</a></li>
+                    <li><a href="/about-us/what-people-are-saying-about-us/">What People Say About Us</a></li>
+                    <li><a href="/category/blog/intern-blog/">Intern Blog</a></li>
+					<li><a href="/about-us/events/our-human-rights-award/">Human Rights Award</a></li>
+		                     <li><a href="http://ejob.bz/ATS/CompanyPortal.do?refresh=true&companyGK=18191&portalGK=1127">Job Opportunities</a></li>
+               			<li><a href="/about-us/contact-us/">Contact Us</a></li>
+				</ul>
+</li><!-- End of Second -->
+            		<!-- Third Button -->
+			<li><a href="https://www.humanrightsfirst.org/donate/">GIVE</a></li><!-- End of third button -->
+            		<!-- Fourth Button -->
+			<li>
+				<a href="/category/media-room/press-releases/">MEDIA ROOM</a>
+				<ul>
+					<li><a href="/category/media-room/press-releases/">Press Release</a></li>
+                    <li><a href="/media-room/podcasts/">Podcasts</a></li>
+					<li><a href="/media-room/events/">Events</a></li>
+					<li><a href="/category/media-room/from-the-podium/">From the Podium</a></li>
+					<li><a href="/category/media-room/publications/">Publications</a></li>
+					<li><a href="/category/about-us/rights-wire/">Rights Wire Newsletter </a></li>
+                    			<li><a href="/category/blog/">HRF Blog </a></li>
+                    			<li><a href="http://feeds.feedburner.com/HumanRightsFirstBlog">Subscribe to RSS Feed</a></li>
+                    			<li><a href="http://www.youtube.com/HumanRightsFirstOrg">Watch Our Videos</a></li>
+				</ul>
+			</li><!-- End of Fourth Button -->
+			<!-- Search Button -->
+			<li id="home"><script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load('search', '1');
+  google.setOnLoadCallback(function() {
+    google.search.CustomSearchControl.attachAutoCompletion(
+      '001648087321990522602:bth1nzx1is4',
+      document.getElementById('q'),
+      'cse-search-box');
+  });
+</script>
+<form action="http://www.google.com/cse" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="001648087321990522602:bth1nzx1is4" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" id="q" class="s" autocomplete="off"  />
+    <input type="submit" name="sa" class="searchsubmit" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script></li>	
+
+ 
+	</ul>
+ </div>
+	 <div id="960wrapper">   <div id="main-column-two">
+   		   						      
+			      <div class="post" id="post-21447">
+			      		<p id="breadcrumbs"><a href="http://www.humanrightsfirst.org">Home</a> &raquo; <a href="http://www.humanrightsfirst.org/media-room/">Media Room</a> &raquo; <a href="http://www.humanrightsfirst.org/media-room/events/">Events</a> &raquo; <strong>2012 Human Rights First Awards</strong></p><div class="fullentry">
+<h1 class="title"><a href="http://www.humanrightsfirst.org/media-room/events/2012-human-rights-first-awards/" rel="bookmark" title="Permanent Link to 2012 Human Rights First Awards">Topic Page Mockup Proposal</a></h1>
+<img src="/images/slideshow_mock.jpg" />
+<div id="s-media">
+<!-- Facebook Like Button Code --><div class="fb-like" data-href="http://www.humanrightsfirst.org/debates" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true"></div><!-- End Facebook Like Button Code --><!-- Click to tweet button --><div class="tweet-share"><a href="http://clicktotweet.com/dQ0bw"><img src="/images/twitter_logo.jpg" /></a></div><!-- End Click to tweet button Code --><!-- Google Plusone button --><div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div><script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'http://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script><!-- End Google Plus One Code -->
+</div>
+<div style="clear:both;"></div>
+<div id="desc_container"><h3>Description Language</h3><p>Facilisi nam liber tempor cum soluta nobis eleifend option. Vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis? Decima et quinta decima, eodem modo typi qui nunc nobis videntur parum clari fiant sollemnes in. Quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea, commodo consequat duis. Feugait nulla congue nihil imperdiet doming, id quod mazim placerat facer? Hendrerit in vulputate velit esse molestie consequat vel illum dolore eu?</p>
+</div>
+<!-- Begin Mini Tabs -->
+<div id="minitab">
+<div id="subtab_container">
+<ul class="subtabs">
+<li id="select1"><span class="tab_item" title="/disp_text/take_action.php">Take Action</span></li>
+<li id="select2"><span class="tab_item" title="/disp_text/text2.html">News</span></li>
+<li id="select3"><span class="tab_item" title="/disp_text/keydocs.php">Resources</span></li>
+</ul>
+</div>
+<div id="tborder"><div id="tcontent">
+<p>Each year, the U.S. government detains close to 400,000 immigrants in more than 250 jails and jail-like facilities nationwide – up to 33,400 per night, and at a cost of more than $2 billion.  These individuals include asylum seekers fleeing persecution, legal immigrants who overstayed their visas, recent border crossers, and lawful permanent residents who were convicted of non-violent crimes.</p>
+
+<p>The purpose of this “civil” detention is to ensure that immigrants in proceedings or with orders of deportation appear at their removal hearings and comply with removal orders. Immigration detention in the United States has more than tripled over the past 15 years, from 108,454 in 1996 to approximately 363,000 in fiscal year 2011. The expansion proceeded more quickly than thoughtfully, leaving appropriate and safe confinement practices, due process and human rights, and cost-effective alternatives by the wayside.</p>
+
+<p>The immigration detention system should not be modeled after the prison system. Ultimately, our objective is to secure reforms to the immigration detention system so that immigrants and asylum seekers are not detained unnecessarily and in ways that are inconsistent with human rights standards.</p>
+
+<p>Dialogues on Detention brings together field and policy experts and practitioners to help shift the national conversation on immigration detention, build alliances between stakeholders in both fields, and lay the groundwork for future improvements in policy and practice.</p>
+
+</div></div>
+
+</div>
+<!-- End Minitab code -->
+
+				      	</div>
+			      </div>
+   			   			<div class="navigation">
+		 	      <div class="alignleft"></div>
+		 	      <div class="alignright"></div>
+   			</div>
+   		   </div><!--end div main-column-->
+	
+<div id="rightsidebar" style="margin-top: 15px;">
+
+<div class="sidebar_new"><h3 style="margin-left: 3px; margin-top: 8px;">Program Language</h3><p style="margin-left: 6px;">Aliquam erat volutpat ut wisi enim ad minim veniam quis nostrud exerci tation ullamcorper suscipit lobortis. Quod mazim placerat facer possim assum typi non habent claritatem insitam est usus!
+</p></div>
+<div id="signup-form" usemap="twitter" style="margin-top: 15px;" >
+<form name="data" action="http://actions.humanrightsfirst.org/dia/processEditValues.jsp" method="POST" style="z-index:2">
+<input type="hidden" name="first_name_5955" value="" />
+<input type="hidden" name="table" value="supporter"/>
+<input type="hidden" name="key" value="0" />
+<input type="hidden" name="required" value="Email," />
+<input type="hidden" name="link" value="custom"/>
+<input type="hidden" name="linkKey" value="0"/>
+<input type="hidden" name="required" value="Email," />
+<input type="hidden" name="link" value="groups">
+<input type="hidden" name="linkKey" value="42145">
+<input type="hidden" name="redirect" value="http://www.humanrightsfirst.org/about-us/thank-you-for-getting-involved/thank-you-for-getting-involved/"> 
+<input type="hidden" name="Receive_Email" value="3">  
+<input type="hidden" name="organization_KEY" value="5955">
+<input type="hidden" name="Tracking_Code" value="" />
+<input type="hidden" name="link" value="tracking_code" />
+<input type="hidden" name="linkKey" value="0" />
+<input type="hidden" name="email_trigger_KEYS" value="5328" />
+<input type="hidden" name="chapter_lookup" value="" />
+<input title="Email" type="text" id="f11" name="Email" class="blockInput" value="Enter your E-mail" size="12" height="10px" style="margin:44px 50px 0 10px; vertical-align:top; border: 1px solid #E0DFE3;" align="left" onfocus="this.value = (this.value=='Enter your E-mail')? '' : this.value;" />
+<input type="image" src="/wp-content/uploads/images/Go-btn-19x19.png" value="Submit" class="dia_submit" style="float:none;position:relative;top:-20px;left:111px" /> 
+</form>
+
+</div> 
+<!-- end div signup form, rightmost column -->
+
+<div id="missionbox" style="margin-top: 15px;">
+<table width="140" height="163" border="0" padding="0" cellpadding="0" cellspacing="0">
+	<tbody>
+    	 <tr>
+        	<td width="140px" height="25px" colspan="3" style="margin:0; padding:0; border:0; "><a href="/about-us/"><img src="/wp-content/uploads/images/missiontopfull.png" alt="Our Mission" border="0" height="25px" width="140px" hspace="0" vspace="0" /></a></td>
+        </tr>
+        <tr>
+        	<td width="12px" height="116px" align="left" style="margin:0; padding:0; border:0; background-image:url('/wp-content/uploads/images/mission-left.png'); "></td>
+            <td width="116px" height="116px" align="left" bgcolor="#FFFFFF" style="margin:0; padding:0; border:0; vertical-align:top;">
+            <p align="left" style="margin-top:10px;">Human Rights First is an independent advocacy and action organization that challenges America to live up to its ideals. <a href="/about-us/">More &raquo;</a></p></td>
+            <td width="12px" height="116" align="left" style="margin:0; padding:0; border:0; background-image:url('/wp-content/uploads/images/mission-right.png'); "></td>
+        </tr>
+         <tr>
+        	<td width="12px" height="12px" style="margin:0; padding:0; border:0; background-image:url('/wp-content/uploads/images/mission-LL.png');"></td>
+            <td width="116px" height="12px" style="margin:0; padding:0; border:0; background-image:url('/wp-content/uploads/images/mission-bottom.png');"></td>
+            <td width="12px" height="12px" style="margin:0; padding:0; border:0; background-image:url('/wp-content/uploads/images/mission-LR.png');"></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- end of missionbox div --> 
+</div>  
+</div>   
+</div><!--end div wrapper-->
+
+
+    <div align="center">
+        <div id="footer"> 
+                <a href="/">Homepage</a> |
+<a href="/category/media-room/press-releases/">Media Room</a> | <a href="/category/about-us/">About Us</a> | <a href="https://www.humanrightsfirst.org/donate/">Give</a> | <a href="http://ejob.bz/ATS/CompanyPortal.do?refresh=true&companyGK=18191&portalGK=1127">Jobs</a> | <a href="/about-us/contact-us/">Contact Us</a> | <a href="/category/media-room/publications/">Publications</a>
+	<p>New York Office, Human Rights First, 333 Seventh Avenue, 13th Floor, New York, NY 10001-5108<br />
+  Washington Office, Human Rights First, 100 Maryland Avenue, NE, Suite 500, Washington, DC 20002-5625<br />
+  For media inquiries call 202-370-3323 .<br />
+  Human Rights First is a nonpartisan, 501(c)(3), international human rights organization based in New York and Washington D.C.<br />
+  We do not favor or oppose any candidate for public office.</p>
+               <div align="center" class="textSmall"><br /> 
+<a href="/about-us/privacy-policy/"> <b>Privacy Policy </b></a>
+               </div>
+			</div>    
+    </div>
+
+
+</div><!--End div container-->
+</body>
+</html>
+
+
+
+</body>
+</html>
