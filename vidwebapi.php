@@ -10,7 +10,7 @@ ini_set('display_errors', True);
 		curl_setopt($vinit, CURLOPT_TIMEOUT, 30);
 		curl_setopt($vinit, CURLOPT_FOLLOWLOCATION, 1);
 		$return = curl_exec($vinit);
-		curl_close($curl);
+		curl_close($vinit);
 		return ($return);
 	}
 
