@@ -14,9 +14,15 @@
 			});
 			// load take action content on page load.
 			$('#tcontent').load('/disp_text/take_action.php');
+			$('#select1 > .tab_item').css({'color' : '#CCCCCC'});
+			$('#select1 > .tab_item').addClass('clicked');
 			
 			$('.tab_item').click(function() {
 				var contentlnk = $(this).attr('title');
+				$('.tab_item').css({'color' : '#FFFFFF'}); //reset tab color
+				$('.tab_item').removeClass('clicked');	// remove 'clicked' class
+				$(this).css({'color' : '#CCCCCC'});
+				$(this).addClass('clicked');
 				$('#tcontent').fadeOut('slow', function() {
 					$('#tcontent').load(contentlnk);
 					$('#tcontent').fadeIn('slow');
@@ -24,10 +30,13 @@
 			});
 			$('.tab_item').hover(
 				function() {
-					$(this).css({'color' : '#333333'});
+					$(this).css({'color' : '#CCCCCC'});
 				},
 				function(){
-					$(this).css({'color' : '#FFFFFF'});
+					if ($(this).hasClass('clicked')) {
+					} else {
+						$(this).css({'color' : '#FFFFFF'});
+					}
 				}
 			);
 		});
@@ -149,7 +158,7 @@
 </script><!-- End Google Plus One Code -->
 </div>
 <div style="clear:both;"></div>
-<div id="desc_container"><h3>Description Language</h3><p>Human rights defenders across the globe look to the United States for inspiration and count on it for support. In the case of China, Human Rights First works to amplify the voices of Chinese lawyers who are pushing for their government to respect the rule of law. We press for the United States to put human rights as a priority in U.S.-China relations. By harnessing American influence, we aim to secure core freedoms for human rights defenders–including the right to free speech and assembly.</p>
+<div id="desc_container"><h3>Description</h3><p>Human rights defenders across the globe look to the United States for inspiration and count on it for support. In the case of China, Human Rights First works to amplify the voices of Chinese lawyers who are pushing for their government to respect the rule of law. We press for the United States to put human rights as a priority in U.S.-China relations. By harnessing American influence, we aim to secure core freedoms for human rights defenders–including the right to free speech and assembly.</p>
 </div>
 <!-- Begin Mini Tabs -->
 <div id="minitab">
@@ -161,13 +170,6 @@
 </ul>
 </div>
 <div id="tborder"><div id="tcontent">
-<p>Each year, the U.S. government detains close to 400,000 immigrants in more than 250 jails and jail-like facilities nationwide – up to 33,400 per night, and at a cost of more than $2 billion.  These individuals include asylum seekers fleeing persecution, legal immigrants who overstayed their visas, recent border crossers, and lawful permanent residents who were convicted of non-violent crimes.</p>
-
-<p>The purpose of this “civil” detention is to ensure that immigrants in proceedings or with orders of deportation appear at their removal hearings and comply with removal orders. Immigration detention in the United States has more than tripled over the past 15 years, from 108,454 in 1996 to approximately 363,000 in fiscal year 2011. The expansion proceeded more quickly than thoughtfully, leaving appropriate and safe confinement practices, due process and human rights, and cost-effective alternatives by the wayside.</p>
-
-<p>The immigration detention system should not be modeled after the prison system. Ultimately, our objective is to secure reforms to the immigration detention system so that immigrants and asylum seekers are not detained unnecessarily and in ways that are inconsistent with human rights standards.</p>
-
-<p>Dialogues on Detention brings together field and policy experts and practitioners to help shift the national conversation on immigration detention, build alliances between stakeholders in both fields, and lay the groundwork for future improvements in policy and practice.</p>
 
 </div></div>
 
