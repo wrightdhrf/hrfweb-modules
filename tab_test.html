@@ -12,6 +12,8 @@
 				$(this).show();
 				$('#tcontent').html('<img src="/images/325.gif" />');
 			});
+			// load take action content on page load.
+			$('#tcontent').load('/disp_text/take_action.php');
 			
 			$('.tab_item').click(function() {
 				var contentlnk = $(this).attr('title');
@@ -134,7 +136,7 @@
 	 <div id="960wrapper">   <div id="main-column-two">
    		   						      
 			      <div class="post" id="post-21447">
-			      		<p id="breadcrumbs"><a href="http://www.humanrightsfirst.org">Home</a> &raquo; <a href="http://www.humanrightsfirst.org/media-room/">Media Room</a> &raquo; <a href="http://www.humanrightsfirst.org/media-room/events/">Events</a> &raquo; <strong>2012 Human Rights First Awards</strong></p><div class="fullentry">
+			      		<p id="breadcrumbs"><a href="http://www.humanrightsfirst.org">Home</a> &raquo; <a href="http://www.humanrightsfirst.org/media-room/">Media Room</a> &raquo; <a href="http://www.humanrightsfirst.org/media-room/events/">Events</a> &raquo; <strong>Human Rights Defenders in China</strong></p><div class="fullentry">
 <h1 class="title"><a href="http://www.humanrightsfirst.org/media-room/events/2012-human-rights-first-awards/" rel="bookmark" title="Permanent Link to 2012 Human Rights First Awards">Human Rights Defenders in China</a></h1>
 <img src="/images/slideshow_mock.jpg" />
 <div id="s-media">
@@ -186,7 +188,7 @@
 <p>Around the world, Human Rights First seeks to protect human rights defenders, all too often both the champions of progress as well as the victims of repression.</p>
 
 <a href="http://www.humanrightsfirst.org/our-work/human-rights-defenders/what-is-the-human-rights-defenders-program/"><p>Our Program»</p></a>
-<a href="http://www.humanrightsfirst.org/our-work/human-rights-defenders/what-is-a-human-rights-defender/"><p>What is a Human Rights Defender?»></p></a>
+<a href="http://www.humanrightsfirst.org/our-work/human-rights-defenders/what-is-a-human-rights-defender/"><p>What is a Human Rights Defender?»</p></a>
 <a href="http://www.humanrightsfirst.org/our-work/human-rights-defenders/online-tools-and-manuals-for-human-rights-defenders/"><p>Tools For Human Rights Defenders»</p></a>
 <a href="http://www.humanrightsfirst.org/our-work/human-rights-defenders/reports/"><p>Reports»</p></a>
 </div>
@@ -212,7 +214,24 @@
 <input title="Email" type="text" id="f11" name="Email" class="blockInput" value="Enter your E-mail" size="12" height="10px" style="margin:44px 50px 0 10px; vertical-align:top; border: 1px solid #E0DFE3;" align="left" onfocus="this.value = (this.value=='Enter your E-mail')? '' : this.value;" />
 <input type="image" src="/wp-content/uploads/images/Go-btn-19x19.png" value="Submit" class="dia_submit" style="float:none;position:relative;top:-20px;left:111px" /> 
 </form>
+<div id="facebook-link">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
+<div class="fb-like" data-href="http://www.humanrightsfirst.org/our-work/human-rights-defenders/china/" data-send="false" data-layout="button_count" data-width="85" data-show-faces="false" data-font="arial"></div>
+</div>
+<div id="twitter-link">
+<a href="https://twitter.com/#!/humanrights1st" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+</div>
+<div id="gplus-badge">
+<a href="https://plus.google.com/u/0/113503569310223869376/?prsrc=3" style="text-decoration: none;"><img src="http://ssl.gstatic.com/images/icons/gplus-32.png" width="32" height="32" style="border: 0;"/></a>
+</div>
 </div> 
 <!-- end div signup form, rightmost column -->
 
